@@ -5,8 +5,7 @@ import java.util.UUID;
 public class TestBar
 {
 
-    public String generateUuid()
-    {
+    public String generateUuid() {
         return "x" + UUID.randomUUID().toString();
     }
 }
