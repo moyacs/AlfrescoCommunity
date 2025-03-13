@@ -7,6 +7,6 @@ public class TestBar
 
     public String generateUuid()
     {
-        return UUID.randomUUID().toString();
+        return "x" + UUID.randomUUID().toString();
     }
 }
