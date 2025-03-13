@@ -47,10 +47,6 @@ jobs:
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
-      - id: changed-files
-        uses: Alfresco/alfresco-build-tools/.github/actions/github-list-changes@v8.13.0
-        with:
-          write-list-to-env: true
       - uses: Alfresco/alfresco-build-tools/.github/actions/pre-commit@v8.13.0
       - name: "Init"
         run: bash ./scripts/ci/init.sh
