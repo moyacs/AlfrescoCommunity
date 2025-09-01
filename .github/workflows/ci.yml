@@ -41,7 +41,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
@@ -68,7 +68,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -91,7 +91,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -180,7 +180,7 @@ jobs:
             testModule: mmt
             testAttributes: "-Dtest=AllMmtUnitTestSuite"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -260,7 +260,7 @@ jobs:
     env:
       REQUIRES_INSTALLED_ARTIFACTS: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -339,7 +339,7 @@ jobs:
       matrix:
         version: ['10.5', '10.6']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -410,7 +410,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -481,7 +481,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -551,7 +551,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -621,7 +621,7 @@ jobs:
             !contains(github.event.head_commit.message, '[skip tests]') &&
             !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -691,7 +691,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -759,7 +759,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -859,7 +859,7 @@ jobs:
             disabledHostnameVerification: false
             mvn-options: '-Dencryption.ssl.keystore.location=${CI_WORKSPACE}/keystores/alfresco/alfresco.keystore -Dencryption.ssl.truststore.location=${CI_WORKSPACE}/keystores/alfresco/alfresco.truststore'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -973,7 +973,7 @@ jobs:
     env:
       REQUIRES_LOCAL_IMAGES: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -1055,7 +1055,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -1129,7 +1129,7 @@ jobs:
     env:
       REQUIRES_INSTALLED_ARTIFACTS: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -1175,7 +1175,7 @@ jobs:
     env:
       REQUIRES_INSTALLED_ARTIFACTS: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -1217,7 +1217,7 @@ jobs:
     env:
       REQUIRES_LOCAL_IMAGES: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
@@ -1307,7 +1307,7 @@ jobs:
       !contains(github.event.head_commit.message, '[skip tests]') &&
       !contains(github.event.head_commit.message, '[force]')
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: Alfresco/alfresco-build-tools/.github/actions/get-build-info@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/free-hosted-runner-disk-space@v8.13.0
       - uses: Alfresco/alfresco-build-tools/.github/actions/setup-java-build@v8.13.0
